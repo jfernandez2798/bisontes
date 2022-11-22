@@ -108,6 +108,10 @@
               .col-25 {
                 margin-bottom: 20px;
               }
+              
+             img.cuenta{
+				margin-right: 200px;
+			 }
             }
             </style>
         <!-- CSS FILES -->    
@@ -184,13 +188,36 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                     <h2 class="mb-5">Pago</h2>
                 </div>
                 
-                <div class="row">
+                <div class="row" style="width:200; margin:50px;">
                     <div class="col-25">
                         <div class="container">
                           <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>3</b></span></h4>
-                          <p><a href="#">Flautas Verdes</a> <img src="/images/flautas.jpg" alt="" height="100" width="200" > <span class="price">$15</span></p>
-                          <p><a href="#">Pollo en Chipotle</a> <span class="price">$5</span></p>
-                          <p><a href="#">Agua de Sandía</a> <span class="price">$8</span></p>
+                          <p><img class="cuenta" src="images/flautas.jpg" alt="" height="100" width="200" >
+							<a style="margin-left:50px; margin-right:50px; width:100px;" >Flautas Verdes</a>  
+							
+							<span style="margin:20px; float: center;">
+							<button type="button">+</button> <a style="" > <span id="suma"> 0 </span> </a> 
+							<button type="button">-</button> 
+							</span>
+							
+							<span class="price">$15</span></p>
+                          <p><img class="cuenta" src="images/pollo.jpg" alt="" height="100" width="200" >
+							<a style="margin-left:50px ; margin-right:50px;" >Pollo en Chipotle</a> 
+							
+							<span style="margin:20px; float: center;">
+							<button type="button">+</button> <a style="" >1</a> 
+							<button type="button">-</button> 
+							</span>
+							
+							<span class="price">$15</span></p>
+                          <p><img class="cuenta" src="images/agua.jpeg" alt="" height="100" width="200" ><a style="margin-left:50px; margin-right:50px;" >Agua de Sandía</a> 
+							
+							<span style="margin:20px; float: center;">
+							<button type="button">+</button> <a style="" >1</a> 
+							<button type="button">-</button> 
+							</span>
+							
+							<span class="price">$15</span></p>
                           <hr>
                           <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
                         </div>
@@ -395,6 +422,11 @@ https://www.tooplate.com/view/2129-crispy-kitchen
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+function suma() {
+  document.getElementById("suma").innerHTML++;
+}
+	</script>
     
     </body>
 </html>
